@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cat Photo App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+        body {
+          font-family: "Roboto Mono", monospace;
+          color: #0a0a23;
+          font-size: 18px;
+          padding: 1em;
+          line-height: 1.4;
+          text-align: center;
+          margin-top: 5vw;
+        }
+
+        a {
+          color: #0a0a23;
+          text-decoration: underline;
+        }
+
+        a:hover {
+          color: #f5f6f7;
+          background-color: #1b1b32;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        a:active {
+          box-shadow: none;
+          top: 5px;
+        }
+
+      h1 {
+        text-align: center;
+      }
+      .photos {
+        width: 50%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      figcaption {
+        text-align: center;
+      }
+
+      img {
+        max-width: 281px;
+        height: auto;
+      }
+
+      footer {
+        font-size: 0.75em;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 650px) {
+        .photos {
+          flex-direction: column;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Cat Photos</h1>
+    <div class="photos">
+      <figure>
+        <img
+          src="https://i.pinimg.com/736x/11/2c/28/112c28e75fca868024e3c61ba4f71616.jpg"
+          alt="Three kittens looking at the camera."
+        />
+        <figcaption>Three kittens looking at the camera.</figcaption>
+      </figure>
+      <figure>
+        <img
+          src="https://i.pinimg.com/originals/99/b9/c3/99b9c35f8e549ad9de12caec8e4f4c24.jpg" width="%100px" height="300px"
+          alt="A cute  cat lying on its back."
+        />
+        <figcaption>A cute  cat lying on its back.</figcaption>
+      </figure>
+    </div>
+    <footer>
+      Hakkımda -> <a href="https://www.linkedin.com/in/goktugodemis/" target="_blank">LinkedIn</a>
+    </footer>
+  </body>
+</html>
